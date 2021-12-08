@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Profile from './Profile';
 
 export default function ProfileList({ items }) {
@@ -21,14 +21,11 @@ export default function ProfileList({ items }) {
     );
 }
 
-// ProfileList.propTypes = {
-//     avatar: PropTypes.string,
-//     username: PropTypes.string.isRequired,
-//     tag: PropTypes.string.isRequired,
-//     location: PropTypes.string.isRequired,
-//     statFollowers: PropTypes.number.isRequired,
-//     statViews: PropTypes.number.isRequired,
-//     statLikes: PropTypes.number.isRequired,
-// }
+ProfileList.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            username: PropTypes.string.isRequired,  
+    }))
+}
 
 
