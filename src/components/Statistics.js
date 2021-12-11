@@ -4,12 +4,10 @@ export default function Statistics({
     label,
     percentage}) {
   
-  return   <ul class="stat-list">
-    <li class="item">
+  return   <>
       <span class="label">{label}</span>
       <span class="percentage">{percentage}</span>
-    </li>
-  </ul>
+  </>
 }
 
 Statistics.propTypes = {

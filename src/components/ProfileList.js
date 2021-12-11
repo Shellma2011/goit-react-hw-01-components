@@ -3,10 +3,10 @@ import Profile from './Profile';
 
 export default function ProfileList({ items }) {
     return (
-        <ul>
+        <div class="profile">
             {items.map(item => (
-                <li key={item.username}>
-                    <Profile
+                <Profile
+                        key={item.username}    
                         username={item.username}
                         tag={item.tag}
                         location={item.location}
@@ -15,10 +15,9 @@ export default function ProfileList({ items }) {
                         statViews={item.stats.views}
                         statLikes={item.stats.likes}
                     />
-                </li>
             ))}
-        </ul>
-    );
+    </div>
+)
 }
 
 ProfileList.propTypes = {
@@ -27,5 +26,3 @@ ProfileList.propTypes = {
             username: PropTypes.string.isRequired,  
     }))
 }
-
-

@@ -5,16 +5,14 @@ export default function FriendListItem({
     avatar,
     name}) {
   
-  return <ul class="friend-list">
-    <li class="item">
+  return <>
         <span class="status">{isOnline}</span>
         <img class="avatar"
             src={avatar}
             alt="User avatar"
             width="48" />
           <p class="name">{name}</p>
-    </li>
-</ul>  
+    </>  
 }
 
 FriendListItem.propTypes = {

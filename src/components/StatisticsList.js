@@ -5,7 +5,7 @@ export default function StatisticsList({ items }) {
     return (
         <ul class="stat-list">
             {items.map(item => (
-                <li key={item.id}>
+                <li class="item" key={item.id}>
                     <Statistics
                         label={item.label}
                         percentage={item.percentage}

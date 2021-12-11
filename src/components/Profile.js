@@ -9,7 +9,7 @@ export default function Profile({
     statViews,
     statLikes}) {
   
-  return <div class="profile">
+  return <>
    <div class="description">
      <img
       src={avatar}
@@ -35,11 +35,11 @@ export default function Profile({
       <span class="quantity">{statLikes}</span>
     </li>
   </ul>
-</div>  
+</>  
 }
 
 Profile.propTypes = {
-    avatar: PropTypes.string,
+    avatar: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
