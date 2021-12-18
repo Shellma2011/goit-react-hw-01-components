@@ -1,0 +1,91 @@
+.profile {
+  text-align: center;
+  width: 300px;
+  margin: 30px auto;
+
+  border: 1px solid grey;
+  border-radius: 2%;
+
+  background: white;
+  box-shadow: -1px 15px 30px -12px black;
+}
+
+.description {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-size: 16px;
+  line-height: 1.33;
+  font-weight: 400;
+}
+
+.avatar {
+  display: block;
+  width: 100px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.name {
+  padding: 1px 10px;
+  margin: 5px auto;
+
+  font-weight: 700;
+  color: black;
+}
+
+.tag {
+  padding: 1px 10px;
+  margin: 5px auto;
+
+  font-size: 14px;
+  color: grey;
+}
+
+.location {
+  padding: 1px 10px;
+  margin: 5px auto;
+
+  color: grey;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+
+  background-color: lightgray;
+  border-top: 1px solid rgb(136, 128, 128);
+  border-radius: 4%;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 0;
+}
+
+.stats__item:not(:last-child) {
+  border-right: 1px solid rgb(136, 128, 128);
+}
+
+.label {
+  font-size: 14px;
+  color: gray;
+}
+
+.quantity {
+  margin-top: 5px;
+
+  font-weight: 700;
+  font-size: 16px;
+}

@@ -1,0 +1,40 @@
+.TransactionHistory {
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #696d70;
+
+  margin: 30px auto;
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+
+th {
+  height: 40px;
+  background-color: aqua;
+}
+
+tr {
+  display: table-row;
+  background: #fff;
+  width: 100%;
+}
+
+tr:nth-of-type(odd) {
+  background: #ecf1f4;
+}
+
+td {
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  display: table-cell;
+}
+
+td:nth-child(1) {
+  text-transform: capitalize;
+}
