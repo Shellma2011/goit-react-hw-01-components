@@ -27,7 +27,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://shellma2011.github.io/goit-react-hw-01-components/",
+  "homepage": "https://shellma2011.github.io/goit-react-hw-01-components",
   "browserslist": {
     "production": [
       ">0.2%",
