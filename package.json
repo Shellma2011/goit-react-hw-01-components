@@ -16,6 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -24,6 +26,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://shellma2011.github.io/goit-react-hw-01-components/",
   "browserslist": {
     "production": [
       ">0.2%",
