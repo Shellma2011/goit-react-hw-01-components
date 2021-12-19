@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './Friend.module.css';
 
-function FriendListItem({ friend }) {
+export default function FriendListItem({ friend }) {
   const { name, avatar, isOnline } = friend;
   return (
     <li className={s.item}>
@@ -15,8 +15,6 @@ FriendListItem.propTypes = {
   friend: PropTypes.shape({
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
     isOnline: PropTypes.bool.isRequired,
   }).isRequired,
 };
-export default FriendListItem;
